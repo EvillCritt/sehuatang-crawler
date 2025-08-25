@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 全局样式重置 */
+html, body, #root {
+  height: 100%;
+}
+
+/* 链接样式 */
+a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #40a9ff;
+}
+
+/* 按钮样式优化 */
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* 卡片样式优化 */
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 表单样式优化 */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.ant-input, .ant-select-selector {
+  border-radius: 6px;
+}
+
+.ant-input:focus, .ant-select-focused .ant-select-selector {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* 进度条样式 */
+.ant-progress-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 表格样式优化 */
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+}
+
+/* 标签样式 */
+.ant-tag {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* 消息提示样式 */
+.ant-message {
+  z-index: 1010;
+}
+
+/* 模态框样式 */
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+.ant-modal-header {
+  border-radius: 8px 8px 0 0;
+}
+
+/* 下拉菜单样式 */
+.ant-dropdown-menu {
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 工具提示样式 */
+.ant-tooltip-inner {
+  border-radius: 4px;
+}
+
+/* 加载状态样式 */
+.ant-spin-dot-item {
+  background-color: #667eea;
+}
+
+/* 响应式工具类 */
+@media (max-width: 768px) {
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-card-body {
+    padding: 16px;
+  }
+  
+  .ant-table {
+    font-size: 12px;
+  }
+
+  /* 移动端表格优化 */
+  .ant-table-thead > tr > th {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+
+  /* 移动端按钮优化 */
+  .ant-btn {
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+  }
+
+  .ant-btn-sm {
+    height: 28px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+
+  /* 移动端输入框优化 */
+  .ant-input, .ant-select-selector {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* 移动端卡片优化 */
+  .ant-card {
+    margin-bottom: 16px;
+  }
+
+  .ant-card-head {
+    padding: 0 16px;
+  }
+
+  .ant-card-head-title {
+    font-size: 16px;
+  }
+
+  /* 移动端模态框优化 */
+  .ant-modal-content {
+    margin: 0 8px;
+  }
+
+  .ant-modal-header {
+    padding: 16px;
+  }
+
+  .ant-modal-body {
+    padding: 16px;
+  }
+
+  /* 移动端标签优化 */
+  .ant-tag {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+
+  /* 移动端进度条优化 */
+  .ant-progress {
+    font-size: 12px;
+  }
+
+  /* 移动端分页优化 */
+  .ant-pagination {
+    font-size: 12px;
+  }
+
+  .ant-pagination-item {
+    min-width: 28px;
+    height: 28px;
+    line-height: 26px;
+  }
+
+  /* 移动端开关优化 */
+  .ant-switch {
+    height: 24px;
+    min-width: 44px;
+  }
+
+  /* 移动端选择器优化 */
+  .ant-select {
+    font-size: 14px;
+  }
+
+  /* 移动端数字输入框优化 */
+  .ant-input-number {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* 移动端时间选择器优化 */
+  .ant-picker {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* 移动端单选框组优化 */
+  .ant-radio-group {
+    font-size: 14px;
+  }
+
+  /* 移动端消息提示优化 */
+  .ant-message {
+    font-size: 14px;
+  }
+
+  /* 移动端工具提示优化 */
+  .ant-tooltip {
+    font-size: 12px;
+  }
+
+  /* 移动端弹出确认框优化 */
+  .ant-popconfirm {
+    font-size: 14px;
+  }
+
+  /* 移动端空间组件优化 */
+  .ant-space {
+    gap: 8px !important;
+  }
+
+  .ant-space-vertical > .ant-space-item {
+    margin-bottom: 8px;
+  }
+
+  /* 移动端分割线优化 */
+  .ant-divider {
+    margin: 16px 0;
+  }
+
+  /* 移动端标签页优化 */
+  .ant-tabs-tab {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* 移动端下拉菜单优化 */
+  .ant-dropdown-menu-item {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* 超小屏幕适配 */
+@media (max-width: 480px) {
+  .ant-card-body {
+    padding: 12px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 6px 2px;
+    font-size: 11px;
+  }
+
+  .ant-btn {
+    height: 32px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .ant-input, .ant-select-selector {
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .ant-modal-content {
+    margin: 0 4px;
+  }
+
+  .ant-modal-header,
+  .ant-modal-body {
+    padding: 12px;
+  }
+}
+
